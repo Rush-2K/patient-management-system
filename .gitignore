@@ -1,0 +1,44 @@
+# --- Root Level .gitignore for Spring Boot Monorepo ---
+
+# Ignore build outputs in any subfolder
+**/target/
+**/build/
+**/out/
+
+# Ignore Maven Wrapper files across all projects
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
+**/maven-wrapper.jar
+
+# Keep target folders that are actually source code (rare Spring Boot edge case)
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Help files
+HELP.md
+
+### STS (Spring Tool Suite) ###
+**/.apt_generated
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings/
+**/.springBeans
+**/.sts4-cache
+
+### IntelliJ IDEA ###
+**/.idea/
+**/*.iws
+**/*.iml
+**/*.ipr
+
+### VS Code ###
+**/.vscode/
+
+### Operating System files ###
+.DS_Store
+Thumbs.db
+
+# Ignore local database data
+**/db_volumes/
