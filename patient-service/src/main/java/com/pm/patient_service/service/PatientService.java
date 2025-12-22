@@ -62,6 +62,10 @@ public class PatientService {
 
         // send to kafka
         kafkaProducer.sendEvent(newPatient);
+        log.info("Sent Patient Event: [PatientId={}, PatientName={}, " +
+                        "PatientEmail={}]", newPatient.getId(),
+                newPatient.getName(),
+                newPatient.getEmail());
 
         return PatientMapper.toDTO(newPatient);
     }

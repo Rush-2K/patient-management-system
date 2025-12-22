@@ -62,9 +62,9 @@ public class PatientController {
     }
 
     // get top 10 user name, email, and date of birth sort by name
-    @GetMapping("/top10")
-    public ResponseEntity<?> getTop10() {
-        List<top10Response> data = patientService.getTop10();
-        return ResponseEntity.ok().body(data);
-    }
+//    @GetMapping("/top10")
+//    public ResponseEntity<?> getTop10() {
+//        List<top10Response> data = patientService.getTop10();
+//        return ResponseEntity.ok().body(data);
+//    }
 }
