@@ -101,9 +101,9 @@ public class PatientService {
     }
 
     //for testing
-    @Scheduled(cron = "*/30 * * * * * ")
-    public void notifyPatientToUpdateInfo() {
-        log.info("UPDATING PATIENT DATA...");
-    }
+//    @Scheduled(cron = "*/30 * * * * * ")
+//    public void notifyPatientToUpdateInfo() {
+//        log.info("UPDATING PATIENT DATA...");
+//    }
 
 }
