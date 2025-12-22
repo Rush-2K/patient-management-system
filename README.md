@@ -1,6 +1,6 @@
 # Patient Management System (Microservices)
 
-> **Learning Project:** This project is a hands-on exploration of high-performance Microservices architecture, following the https://www.youtube.com/watch?v=tseqdcFfTUY&t=19999s guide. It focuses on the transition from traditional REST to **gRPC** and **Event-Driven patterns**.
+> **Learning Project:** This project is a hands-on exploration of high-performance Microservices architecture. It focuses on the transition from traditional REST to **gRPC** and **Event-Driven patterns**.
 
 ---
 
@@ -56,3 +56,6 @@ mvn clean install
 * **Decoupling with Kafka**: Leveraged the **Bitnami Kafka image** to implement an event-driven architecture, ensuring the Analytics service remains decoupled and doesn't impact the latency of the Patient service.
 * **Containerization**: Wrote custom multi-stage Dockerfiles to optimize image size and ensure a consistent "build-once, run-anywhere" workflow.
 
+## 📚 Resources & Credits
+* **Tutorial Source:** [Build & Deploy a Production-Ready Patient Management System](https://www.youtube.com/watch?v=tseqdcFfTUY) by **Chris Blakely**.
+* **Project Context:** This project was developed as a hands-on exercise to master Spring Boot microservices, specifically focusing on gRPC for internal calls and Kafka for event streaming.
